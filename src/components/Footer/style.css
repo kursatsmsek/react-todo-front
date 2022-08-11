@@ -1,0 +1,12 @@
+.footerDiv {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  background-color: rgb(240, 245, 247);
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  color: gainsboro;
+}

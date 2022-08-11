@@ -1,0 +1,78 @@
+.homePageDiv {
+  height: 85%;
+  width: 100%;
+  text-align: center;
+}
+
+.todoListDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todoContainerDiv {
+  height: 100%;
+}
+
+.todoContainerDiv {
+  background-color: rgb(240, 245, 247);
+  width: 500px;
+  height: 30%;
+  border-radius: 5px;
+  margin-top: 4%;
+}
+
+.todoContainerHeaderDiv {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(255, 253, 253);
+}
+
+.todoContainerContentDiv {
+  display: flex;
+  width: 500px;
+  height: 65%;
+}
+
+.todoContainerFooterDiv {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoContainerFooterDiv span {
+  margin-right: 10px;
+  font-size: x-small;
+}
+
+.todoLastDayDiv {
+  font-weight: bold;
+  color: tomato;
+  margin-left: 5px;
+}
+
+.todoStatusDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  margin-left: 5px;
+}
+
+.completeBox {
+  width: 15px;
+  height: 15px;
+}
+
+.todoParagraphDiv {
+  padding: 5px;
+  width: 100%;
+  text-align: start;
+  font-size: 14px;
+}

@@ -1,0 +1,27 @@
+.navbarDiv {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(240, 245, 247);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbarTitleDiv {
+  font-size: xx-large;
+  font-weight: bold;
+  color: gainsboro;
+}
+
+.navbarButtonsDiv {
+  display: flex;
+  height: 100%;
+  width: 10%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: x-large;
+}
+
+.navbarButtonsDiv div {
+  cursor: pointer;
+}
