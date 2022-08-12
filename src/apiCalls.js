@@ -14,3 +14,7 @@ export const changeDoneStatus = (idp, valp) => {
     }
   });
 }
+
+export const createToDo = (body) => {
+  return axios.post('/createToDo', body)
+}
