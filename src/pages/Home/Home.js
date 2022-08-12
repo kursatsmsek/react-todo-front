@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
 import { GrStatusGoodSmall } from 'react-icons/gr'
-import { changeDoneStatus, getTodoList } from '../../apiCalls'
+import { changeDoneStatus, deleteToDo, getTodoList } from '../../apiCalls'
+import { MdDelete } from 'react-icons/md'
 
 const Home = () => {
 
@@ -36,6 +37,12 @@ const Home = () => {
     })
   }
 
+  const deleteToDoEvent = (id) => {
+    deleteToDo(id).then(() => {
+      updateTodoList();
+    })
+  }
+
   return (
     data ?
     <div className='homePageDiv'>
@@ -48,10 +55,17 @@ const Home = () => {
                   <div className='todoLastDayDiv'>
                     {item.title}
                   </div>
-                  <div className='todoCheckBoxDiv'>
-                    <input type="checkbox" checked={item.done} className='completeBox' onChange={(e) => {
-                      window.confirm(`${item.title} will be mark as ${item.done ? "undone" : "done"} !`) && changeCheckBox(item.id, !item.done)
-                    }} />
+                  <div className='todoHeaderRightButtonsDiv'>
+                    <div className='todoCheckBoxDiv'>
+                      <input type="checkbox" checked={item.done} className='completeBox' onChange={(e) => {
+                        window.confirm(`${item.title} will be mark as ${item.done ? "undone" : "done"} !`) && changeCheckBox(item.id, !item.done)
+                      }} />
+                    </div>
+                    <div className='todoDeleteDiv'>
+                      <MdDelete  onClick={() => {
+                        window.confirm(`${item.title} will be delete.`) && deleteToDoEvent(item.id)
+                      }}/>
+                    </div>
                   </div>
                 </div>
                 <div className='todoContainerContentDiv'>
@@ -68,7 +82,6 @@ const Home = () => {
               </div>
             })
           }
-
         </div>
       </div>
     </div>

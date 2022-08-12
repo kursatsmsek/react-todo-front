@@ -18,3 +18,13 @@ export const changeDoneStatus = (idp, valp) => {
 export const createToDo = (body) => {
   return axios.post('/createToDo', body)
 }
+
+export const deleteToDo = (idp) => {
+  return axios({
+    method: 'delete',
+    url: '/deleteToDo',
+    params: {
+      id: idp
+    }
+  });
+}
