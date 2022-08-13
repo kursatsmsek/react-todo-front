@@ -10,7 +10,6 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  background-color: rgb(241, 240, 238);
 }
 
 .createPageContainer input {
@@ -22,6 +21,7 @@
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  background-color: rgb(240 245 247);
 }
 
 .todoContentInput {
@@ -34,6 +34,7 @@
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  background-color: rgb(240 245 247);
 }
 
 .todoUserDiv {

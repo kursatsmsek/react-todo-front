@@ -9,7 +9,6 @@ const Home = () => {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    console.log("düştüm");
     getTodoList()
     .then((res) => {
       setData(res.data)
@@ -17,8 +16,6 @@ const Home = () => {
     .catch((err) => {
       console.log(err)
     })
-
-    console.log(data);
   }, [])
 
   const updateTodoList = () => {
