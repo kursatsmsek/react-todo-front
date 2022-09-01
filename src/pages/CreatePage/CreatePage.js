@@ -7,6 +7,12 @@ const CreatePage = () => {
 
   const navigate = useNavigate()
 
+  useEffect(() => {
+    if(localStorage.getItem("userId") == null) {
+      navigate("/auth")
+    }
+  }, [])
+
   const [data, setData] = useState({
     title: undefined,
     content: undefined,

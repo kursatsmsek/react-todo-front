@@ -3,12 +3,19 @@ import './style.css'
 import { GrStatusGoodSmall } from 'react-icons/gr'
 import { changeDoneStatus, deleteToDo, getTodoList } from '../../apiCalls'
 import { MdDelete } from 'react-icons/md'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
   const [data, setData] = useState(null)
 
+  const navigate = useNavigate()
+
   useEffect(() => {
+    if(localStorage.getItem("userId") == null) {
+      navigate("/auth")
+    }
+
     getTodoList()
     .then((res) => {
       setData(res.data)
