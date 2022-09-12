@@ -14,6 +14,7 @@ import {
 import CreatePage from '../../pages/CreatePage/CreatePage';
 import Home from '../../pages/Home/Home';
 import Auth from '../../pages/Auth/Auth'
+import Register from '../../pages/Register/Register'
 
 const Navbar = () => {
 
@@ -65,6 +66,7 @@ const Navbar = () => {
         <Route path="/create" element={<CreatePage />} />
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </Router>
   )

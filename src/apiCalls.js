@@ -14,6 +14,14 @@ export const login = (data) => {
   return axios.post('/user/login', data);
 }
 
+export const register = (data) => {
+  return axios({
+    method: 'post',
+    url: '/user/create',
+    data: data,
+  });
+}
+
 
 export const changeDoneStatus = (idp, valp) => {
   return axios({

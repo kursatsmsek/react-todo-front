@@ -26,6 +26,10 @@ const Auth = () => {
     })
   }
 
+  const registerLinkClick = () => {
+    navigate("/register")
+  }
+
   return (
     <div className='authDiv'>
       <div className='authContainerDiv'>
@@ -38,7 +42,7 @@ const Auth = () => {
         <div className='authPasswordInputDiv'>
           <input className='authPasswordInput' placeholder='Password' onChange={(e) => setData({...data, password: e.target.value})}/>
         </div>
-        <div className='registerLinkDiv'>
+        <div className='registerLinkDiv' onClick={registerLinkClick}>
           Register
         </div>
         <div className='loginButtonDiv'>

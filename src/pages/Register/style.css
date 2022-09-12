@@ -1,0 +1,64 @@
+.registerPageDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.registerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* input {
+  width: 25rem;
+  height: 3rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  background-color: rgb(240 245 247);
+  font-size: 14px;
+}
+
+.registerButtonDiv {
+  text-align: center;
+}
+
+.registerButton {
+  margin-top: 3rem;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(240 245 247);
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  background-color: rgb(228, 231, 232);
+}
+
+.succesRegisterDiv {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+}
+
+.succesRegisterIcon {
+  font-size: 200px;
+  color: greenyellow;
+}
+
+.succesRegisterText {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  font-weight: 300;
+}
