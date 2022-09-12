@@ -4,6 +4,7 @@ import { GrStatusGoodSmall } from 'react-icons/gr'
 import { changeDoneStatus, deleteToDo, getTodoList } from '../../apiCalls'
 import { MdDelete } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
+import { MagnifyingGlass } from 'react-loader-spinner'
 
 const Home = () => {
 
@@ -14,15 +15,15 @@ const Home = () => {
   useEffect(() => {
     if(localStorage.getItem("userId") == null) {
       navigate("/auth")
+    } else {
+      getTodoList()
+      .then((res) => {
+        setData(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
     }
-
-    getTodoList()
-    .then((res) => {
-      setData(res.data)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
   }, [])
 
   const updateTodoList = () => {
@@ -90,7 +91,18 @@ const Home = () => {
       </div>
     </div>
     :
-    <div>Loading</div>
+    <div className='loadingBarDiv'>
+      <MagnifyingGlass
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="MagnifyingGlass-loading"
+        wrapperStyle={{}}
+        wrapperClass="MagnifyingGlass-wrapper"
+        glassColor = '#c0efff'
+        color = '#e15b64'
+      />
+    </div>
   )
 }
 

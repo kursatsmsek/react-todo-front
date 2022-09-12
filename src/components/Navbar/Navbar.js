@@ -16,7 +16,7 @@ import Home from '../../pages/Home/Home';
 import Auth from '../../pages/Auth/Auth'
 
 const Navbar = () => {
-  
+
   // const navigate = useLocation()
 
   const logOutClick = () => {

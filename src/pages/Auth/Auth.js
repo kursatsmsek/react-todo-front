@@ -38,6 +38,9 @@ const Auth = () => {
         <div className='authPasswordInputDiv'>
           <input className='authPasswordInput' placeholder='Password' onChange={(e) => setData({...data, password: e.target.value})}/>
         </div>
+        <div className='registerLinkDiv'>
+          Register
+        </div>
         <div className='loginButtonDiv'>
           <button className='loginButton' onClick={loginButtonClick}>Login</button>
         </div>

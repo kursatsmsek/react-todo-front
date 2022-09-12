@@ -11,7 +11,7 @@
   border: none;
   border-radius: 3px;
   padding-left: 10px;
-  background-color: rgb(253, 237, 188);
+  background-color: rgb(240 245 247);
   font-size: 14px;
 }
 
@@ -25,11 +25,20 @@
   height: 2rem;
   border: none;
   border-radius: 3px;
-  background-color: orange;
-  color: white;
+  background-color: rgb(240 245 247);
   cursor: pointer;
 }
 
 .loginButton:hover {
-  background-color: rgb(240, 161, 12);
+  background-color: rgb(228, 231, 232);
+}
+
+.registerLinkDiv {
+  font-size: 8px;
+  margin-right: 0.3rem;
+  color: blue;
+  display: flex;
+  justify-content: end;
+  text-decoration: underline;
+  cursor: pointer;
 }

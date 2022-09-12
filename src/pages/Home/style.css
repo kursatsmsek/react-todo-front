@@ -90,3 +90,10 @@
   display: flex;
   align-items: center;
 }
+
+.loadingBarDiv {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
